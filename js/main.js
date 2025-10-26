@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (field.hasAttribute('required') && value === '') {
       const label = field.closest('.form-group').querySelector('label');
-      const fieldLabel = label ? label.textContent.replace('*', '').trim() : 'This field';
+      const fieldLabel = label ? label.textContent.replace(/\*/g, '').trim() : 'This field';
       showError(field, fieldLabel + ' is required');
       return false;
     }
@@ -272,9 +272,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Check if link matches current page
     if (linkPath === currentPath || 
-        (currentPath.endsWith(linkPath) && linkPath !== '/') ||
-        (currentPath === '/site/' && linkPath === 'index.html') ||
-        (currentPath === '/site/index.html' && linkPath === 'index.html')) {
+        (currentPath.endsWith(linkPath) && linkPath !== '/')) {
       link.classList.add('active');
     }
   });
