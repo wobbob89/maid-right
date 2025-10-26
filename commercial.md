@@ -31,7 +31,7 @@ Short copy:
 All crew are vetted and insured. For sensitive sites we can provide references, staff ID verification and enhanced paperwork on request.
 
 H2: Flexible contracts
-From one‑off deep cleans to weekly contracts, we work to your timetable. Pricing can be hourly or contract based — email enquires@maid-right.co.uk with a brief and we’ll propose a plan.
+From one‑off deep cleans to weekly contracts, we work to your timetable. Pricing can be hourly or contract based — email enquiries@maid-right.co.uk with a brief and we’ll propose a plan.
 
 CTA: Request a Commercial Quote
 

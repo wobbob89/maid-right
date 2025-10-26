@@ -139,7 +139,7 @@ git push origin feature/your-feature-name
 
 For questions about this repository or the Maid-Right services:
 
-- Email: enquires@maid-right.co.uk
+- Email: enquiries@maid-right.co.uk
 - Facebook: https://www.facebook.com/profile.php?id=61582952575510
 
 ## 📄 License

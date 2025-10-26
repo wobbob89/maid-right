@@ -37,7 +37,7 @@ H2: Extras & options
 Note: Extras priced per job or added to hourly rate for recurring cleans.
 
 H2: Booking & guarantee
-Book online, email enquires@maid-right.co.uk or message our Facebook page. We confirm arrival windows, provide a tailored checklist, and offer a satisfaction guarantee: tell us within 24 hours and we’ll make it right.
+Book online, email enquiries@maid-right.co.uk or message our Facebook page. We confirm arrival windows, provide a tailored checklist, and offer a satisfaction guarantee: tell us within 24 hours and we’ll make it right.
 
 Microcopy / CTA:
 No hidden fees. Honest pricing. — Book Now
