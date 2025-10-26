@@ -272,9 +272,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Check if link matches current page
     if (linkPath === currentPath || 
-        (currentPath.endsWith(linkPath) && linkPath !== '/') ||
-        (currentPath === '/site/' && linkPath === 'index.html') ||
-        (currentPath === '/site/index.html' && linkPath === 'index.html')) {
+        (currentPath.endsWith(linkPath) && linkPath !== '/')) {
       link.classList.add('active');
     }
   });
