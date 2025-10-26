@@ -1,0 +1,563 @@
+/* Maid-Right - Graffiti Style Static Site */
+
+/* ========== CSS Variables ========== */
+:root {
+  --pink: #FF2D95;
+  --blue: #00D4FF;
+  --green: #C7FF00;
+  --purple: #6A00FF;
+  --charcoal: #0F1722;
+  --offwhite: #FBFAF7;
+  
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 3rem;
+  --spacing-xl: 4rem;
+  
+  --max-width: 1200px;
+  --border-radius: 8px;
+}
+
+/* ========== Reset & Base ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--charcoal);
+  background-color: var(--offwhite);
+}
+
+/* ========== Typography ========== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Permanent Marker', cursive;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-sm);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--charcoal);
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--charcoal);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: var(--spacing-sm);
+}
+
+a {
+  color: var(--pink);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--purple);
+}
+
+ul, ol {
+  margin-left: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* ========== Container ========== */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* ========== Header ========== */
+header {
+  background-color: var(--charcoal);
+  padding: var(--spacing-sm) 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  gap: var(--spacing-md);
+}
+
+nav a {
+  color: var(--offwhite);
+  font-weight: 500;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--pink);
+}
+
+/* Mobile menu toggle */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--offwhite);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: var(--spacing-xs);
+}
+
+/* ========== Hero Section ========== */
+.hero {
+  position: relative;
+  min-height: 500px;
+  background-image: url('../assets/header.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: var(--offwhite);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 50%;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(15, 23, 34, 0.9), rgba(15, 23, 34, 0.3));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+}
+
+.hero h1 {
+  color: var(--offwhite);
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-md);
+}
+
+/* ========== Buttons ========== */
+.btn {
+  display: inline-block;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--pink);
+  color: var(--offwhite);
+}
+
+.btn-primary:hover {
+  background-color: var(--purple);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 45, 149, 0.3);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--offwhite);
+  border-color: var(--offwhite);
+}
+
+.btn-secondary:hover {
+  background-color: var(--offwhite);
+  color: var(--charcoal);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+/* ========== Sections ========== */
+section {
+  padding: var(--spacing-xl) 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+/* ========== Services Grid ========== */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.service-card {
+  background: white;
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-top: 4px solid var(--pink);
+}
+
+.service-card:nth-child(2) {
+  border-top-color: var(--blue);
+}
+
+.service-card:nth-child(3) {
+  border-top-color: var(--green);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-card h3 {
+  color: var(--charcoal);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* ========== Features / Why Us ========== */
+.features-list {
+  list-style: none;
+  margin: var(--spacing-md) 0;
+}
+
+.features-list li {
+  padding: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+  background: white;
+  border-left: 4px solid var(--pink);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.features-list li:nth-child(2) {
+  border-left-color: var(--blue);
+}
+
+.features-list li:nth-child(3) {
+  border-left-color: var(--green);
+}
+
+.features-list li:nth-child(4) {
+  border-left-color: var(--purple);
+}
+
+.features-list li strong {
+  color: var(--charcoal);
+  font-weight: 700;
+}
+
+/* ========== Testimonials ========== */
+.testimonial {
+  background: white;
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: var(--spacing-md);
+  border-left: 4px solid var(--pink);
+}
+
+.testimonial p {
+  font-style: italic;
+  margin-bottom: var(--spacing-sm);
+}
+
+.testimonial cite {
+  display: block;
+  text-align: right;
+  font-weight: 600;
+  color: var(--charcoal);
+  font-style: normal;
+}
+
+/* ========== Contact Form ========== */
+.contact-form {
+  max-width: 600px;
+  margin: var(--spacing-lg) auto;
+  background: white;
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: var(--spacing-md);
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  font-weight: 600;
+  color: var(--charcoal);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: var(--spacing-sm);
+  border: 2px solid #ddd;
+  border-radius: var(--border-radius);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--pink);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-error {
+  color: var(--pink);
+  font-size: 0.875rem;
+  margin-top: var(--spacing-xs);
+  display: none;
+}
+
+.form-group.error .form-error {
+  display: block;
+}
+
+.form-group.error input,
+.form-group.error textarea,
+.form-group.error select {
+  border-color: var(--pink);
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-xs);
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: auto;
+  margin-top: 0.25rem;
+}
+
+.checkbox-group label {
+  margin: 0;
+  font-weight: normal;
+}
+
+/* ========== FAQ Accordion ========== */
+.faq-item {
+  background: white;
+  margin-bottom: var(--spacing-sm);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: var(--spacing-md);
+  background: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: var(--offwhite);
+}
+
+.faq-question::after {
+  content: '+';
+  font-size: 1.5rem;
+  color: var(--pink);
+  transition: transform 0.3s ease;
+}
+
+.faq-question.active::after {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 var(--spacing-md);
+}
+
+.faq-answer.active {
+  max-height: 500px;
+  padding: var(--spacing-md);
+}
+
+/* ========== Footer ========== */
+footer {
+  background-color: var(--charcoal);
+  color: var(--offwhite);
+  padding: var(--spacing-lg) 0 var(--spacing-md);
+  margin-top: var(--spacing-xl);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.footer-section h3 {
+  color: var(--offwhite);
+  margin-bottom: var(--spacing-sm);
+}
+
+.footer-section p,
+.footer-section a {
+  color: var(--offwhite);
+  opacity: 0.9;
+}
+
+.footer-section a:hover {
+  color: var(--pink);
+  opacity: 1;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: var(--spacing-md);
+  border-top: 1px solid rgba(251, 250, 247, 0.2);
+  opacity: 0.8;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .hero {
+    min-height: 400px;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero::before {
+    right: 0;
+    background: rgba(15, 23, 34, 0.8);
+  }
+  
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--charcoal);
+    padding: var(--spacing-md);
+    gap: var(--spacing-sm);
+  }
+  
+  nav ul.active {
+    display: flex;
+  }
+  
+  .menu-toggle {
+    display: block;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+  
+  section {
+    padding: var(--spacing-md) 0;
+  }
+  
+  .hero {
+    min-height: 300px;
+  }
+  
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+}
