@@ -1,7 +1,7 @@
 ---
 path: /contact
 meta_title: "Contact Maid‑Right — Book a Clean or Get a Quote"
-meta_description: "Contact Maid‑Right for domestic, commercial and specialist cleaning. Email enquires@maid-right.co.uk or message our Facebook page to get started."
+meta_description: "Contact Maid‑Right for domestic, commercial and specialist cleaning. Email enquiries@maid-right.co.uk or message our Facebook page to get started."
 og_image: assets/image4-og.jpg
 ---
 
@@ -11,7 +11,7 @@ Subhead:
 Quick bookings via email or Facebook message. Tell us what you need and we’ll send a confirmation.
 
 Contact details:
-- Email: enquires@maid-right.co.uk — best for quotes and booking details.  
+- Email: enquiries@maid-right.co.uk — best for quotes and booking details.  
 - Facebook: https://www.facebook.com/profile.php?id=61582952575510 — message for fast replies.  
 - Phone: Not listed — add later if you want phone bookings.
 

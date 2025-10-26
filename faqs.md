@@ -1,14 +1,14 @@
 ---
 path: /faqs
 meta_title: "FAQs — Maid‑Right Cleaning Questions Answered"
-meta_description: "Common questions about Maid‑Right’s cleaning services, insurance, products and booking. Still unsure? Email enquires@maid-right.co.uk."
+meta_description: "Common questions about Maid‑Right’s cleaning services, insurance, products and booking. Still unsure? Email enquiries@maid-right.co.uk."
 og_image: assets/image1-og-simple.jpg
 ---
 
 H1: FAQs
 
 Subhead:
-Quick answers to common questions. If you don’t see yours below, email enquires@maid-right.co.uk or message our Facebook page.
+Quick answers to common questions. If you don’t see yours below, email enquiries@maid-right.co.uk or message our Facebook page.
 
 Accordion questions and answers:
 
@@ -25,7 +25,7 @@ Q4: Do I need to be home during the clean?
 A4: No. Many customers provide a key or code. We confirm access arrangements and sign any necessary forms.
 
 Q5: How do I book?  
-A5: Email enquires@maid-right.co.uk or message the Facebook page with preferred dates. We’ll reply with confirmation and an arrival window.
+A5: Email enquiries@maid-right.co.uk or message the Facebook page with preferred dates. We’ll reply with confirmation and an arrival window.
 
 Q6: Do you charge by the hour or per job?  
 A6: For regular cleans we recommend hourly pricing; for deep or specialist jobs we provide fixed quotes. Exact rates are given with each quote.
@@ -49,7 +49,7 @@ Q12: How long will a clean take?
 A12: It depends on property size and checklist. We provide an estimated duration with your quote.
 
 Microcopy:
-Still got questions? Email enquires@maid-right.co.uk or message our Facebook page — we usually reply within 24 hours.
+Still got questions? Email enquiries@maid-right.co.uk or message our Facebook page — we usually reply within 24 hours.
 
 SEO suggestions:
 - Use FAQ schema markup on this page for improved SERP display.

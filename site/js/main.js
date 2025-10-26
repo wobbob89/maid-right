@@ -144,16 +144,42 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       }
       
-      // If form is valid, show success message
+      // If form is valid, send email
       if (isValid) {
-        // In a real application, this would POST to a server
-        console.log('Form is valid. Data:', formData);
+        // Collect optional fields
+        const phoneField = contactForm.querySelector('[name="phone"]');
+        const phoneValue = phoneField ? phoneField.value.trim() : '';
+        
+        const preferredDateField = contactForm.querySelector('[name="preferred-date"]');
+        const preferredDateValue = preferredDateField ? preferredDateField.value.trim() : '';
+        
+        const messageField = contactForm.querySelector('[name="message"]');
+        const messageValue = messageField ? messageField.value.trim() : '';
+        
+        // Build email body
+        let emailBody = `QUOTE REQUEST FROM MAID-RIGHT WEBSITE\n\n`;
+        emailBody += `Name: ${formData.name}\n`;
+        emailBody += `Email: ${formData.email}\n`;
+        if (phoneValue) emailBody += `Phone: ${phoneValue}\n`;
+        emailBody += `Postcode/Town: ${formData.postcode}\n`;
+        emailBody += `Service: ${formData.service}\n`;
+        if (preferredDateValue) emailBody += `Preferred Date(s): ${preferredDateValue}\n`;
+        if (messageValue) emailBody += `\nMessage:\n${messageValue}\n`;
+        
+        // Create mailto link
+        const subject = `Quote Request - ${formData.service} - ${formData.name}`;
+        const mailtoLink = `mailto:enquiries@maid-right.co.uk?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+        
+        // Open email client
+        window.location.href = mailtoLink;
         
         // Show success message
-        alert('Thank you for your enquiry! We\'ll get back to you soon via email at enquires@maid-right.co.uk');
-        
-        // Reset form
-        contactForm.reset();
+        setTimeout(() => {
+          alert('Your email client should open with a pre-filled message. Please click send to submit your quote request.\n\nIf your email client doesn\'t open, please email us directly at enquiries@maid-right.co.uk');
+          
+          // Reset form
+          contactForm.reset();
+        }, 500);
       } else {
         // Focus on first error field
         const firstError = contactForm.querySelector('.form-group.error input, .form-group.error textarea, .form-group.error select');

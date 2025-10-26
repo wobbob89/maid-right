@@ -1,7 +1,7 @@
 ---
 path: /
 meta_title: "Maid‑Right — Clean Like You Mean It | Melksham Cleaning Crew"
-meta_description: "Maid‑Right brings graffiti‑bold style and hotel‑level cleaning to Melksham. Domestic, commercial and specialist cleans — book online or email enquires@maid-right.co.uk."
+meta_description: "Maid‑Right brings graffiti‑bold style and hotel‑level cleaning to Melksham. Domestic, commercial and specialist cleans — book online or email enquiries@maid-right.co.uk."
 og_image: assets/image1-og.jpg
 ---
 
@@ -28,7 +28,7 @@ Why Maid‑Right?
 - Real People, Real Service — You’ll see names, not just uniforms.
 
 How it works — 3 steps
-1) Book — Choose online or email enquires@maid-right.co.uk.  
+1) Book — Choose online or email enquiries@maid-right.co.uk.  
 2) We clean — Vetted crew, custom checklist, hotel‑level finish.  
 3) Relax — Final check and satisfaction guarantee.
 
@@ -37,7 +37,7 @@ Testimonials teaser:
 
 Footer microcopy:
 Based in Melksham. Serving Devizes, Trowbridge, Corsham & Chippenham.  
-Contact: enquires@maid-right.co.uk • Facebook: https://www.facebook.com/profile.php?id=61582952575510
+Contact: enquiries@maid-right.co.uk • Facebook: https://www.facebook.com/profile.php?id=61582952575510
 
 SEO suggestions:
 - Use image1.jpg (1200×630 crop) as OG image.

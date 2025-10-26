@@ -21,7 +21,7 @@ H2: Our specialist services
 - Eco‑cleaning option — Plant‑based products only; a great choice for sensitive households.
 
 H2: How we price specialist jobs
-Specialist jobs are quoted per job. Photos and a short brief speed up quoting — email enquires@maid-right.co.uk or message the Facebook page with details.
+Specialist jobs are quoted per job. Photos and a short brief speed up quoting — email enquiries@maid-right.co.uk or message the Facebook page with details.
 
 CTA: Request a Specialist Quote
 
