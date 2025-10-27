@@ -155,22 +155,10 @@ nav a.active {
 .hero {
   position: relative;
   min-height: 500px;
-  background-image: url('../assets/header.jpg');
-  background-size: cover;
-  background-position: center;
+  background-color: var(--offwhite);
   display: flex;
   align-items: center;
-  color: var(--offwhite);
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 50%;
-  bottom: 0;
-  background: linear-gradient(to right, rgba(15, 23, 34, 0.9), rgba(15, 23, 34, 0.3));
+  color: var(--charcoal);
 }
 
 .hero-content {
@@ -180,15 +168,15 @@ nav a.active {
 }
 
 .hero h1 {
-  color: var(--offwhite);
+  color: var(--charcoal);
   font-size: 3rem;
   margin-bottom: var(--spacing-md);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: var(--spacing-md);
+  color: var(--charcoal);
 }
 
 /* ========== Buttons ========== */
@@ -217,13 +205,13 @@ nav a.active {
 
 .btn-secondary {
   background-color: transparent;
-  color: var(--offwhite);
-  border-color: var(--offwhite);
+  color: var(--charcoal);
+  border-color: var(--pink);
 }
 
 .btn-secondary:hover {
-  background-color: var(--offwhite);
-  color: var(--charcoal);
+  background-color: var(--pink);
+  color: var(--offwhite);
 }
 
 .cta-buttons {
@@ -516,11 +504,6 @@ footer {
   
   .hero h1 {
     font-size: 2rem;
-  }
-  
-  .hero::before {
-    right: 0;
-    background: rgba(15, 23, 34, 0.8);
   }
   
   nav ul {
