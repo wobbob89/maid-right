@@ -88,15 +88,17 @@ ul, ol {
 /* ========== Header ========== */
 header {
   background-image: url('../assets/header-background.png');
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: top center;
   background-repeat: no-repeat;
+  background-color: var(--charcoal);
   padding: var(--spacing-md) 0;
   position: sticky;
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  min-height: 180px;
+  min-height: 400px;
+  height: auto;
 }
 
 .header-content {
