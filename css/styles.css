@@ -87,7 +87,7 @@ ul, ol {
 
 /* ========== Header ========== */
 header {
-  background-image: url('../assets/header-background.png');
+  background-image: url('../assets/header.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -96,7 +96,7 @@ header {
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  min-height: 120px;
+  min-height: 300px;
 }
 
 .header-content {
@@ -111,9 +111,9 @@ header {
 }
 
 .logo {
-  height: 60px;
+  height: 80px;
   width: auto;
-  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.7));
 }
 
 nav ul {
@@ -124,7 +124,7 @@ nav ul {
   background-color: rgba(15, 23, 34, 0.7);
   padding: var(--spacing-sm) var(--spacing-md);
   border-radius: var(--border-radius);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(3px);
 }
 
 nav a {
@@ -132,6 +132,7 @@ nav a {
   font-weight: 500;
   padding: var(--spacing-xs) var(--spacing-sm);
   transition: all 0.3s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 nav a:hover,
@@ -149,6 +150,7 @@ nav a.active {
   font-size: 1.5rem;
   cursor: pointer;
   padding: var(--spacing-xs);
+  backdrop-filter: blur(3px);
 }
 
 /* ========== Hero Section ========== */
@@ -513,10 +515,11 @@ footer {
     top: 100%;
     left: 0;
     right: 0;
-    background-color: rgba(15, 23, 34, 0.95);
+    background-color: rgba(15, 23, 34, 0.9);
     padding: var(--spacing-md);
     gap: var(--spacing-sm);
     border-radius: 0 0 var(--border-radius) var(--border-radius);
+    backdrop-filter: blur(5px);
   }
   
   nav ul.active {
